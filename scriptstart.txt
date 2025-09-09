@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+
+echo "Starting web server..."
+systemctl start httpd || systemctl start apache2
+systemctl enable httpd || systemctl enable apache2

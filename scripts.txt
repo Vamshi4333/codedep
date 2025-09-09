@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+
+echo "Installing dependencies..."
+yum update -y
+yum install -y httpd   # for Amazon Linux / RHEL (Apache)
+
+# for Ubuntu, you’d use:
+# apt-get update -y
+# apt-get install -y apache2

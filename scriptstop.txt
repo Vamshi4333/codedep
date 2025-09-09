@@ -1,0 +1,5 @@
+#!/bin/bash
+set -e
+
+echo "Stopping web server if running..."
+systemctl stop httpd || systemctl stop apache2 || true
